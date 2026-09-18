@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal Dashboard | Ananya Atelier</title>
+  <meta name="description" content="Private VIP client portal for Ananya Atelier in Andhra. Track appointments, healing progress, private records, and invoices.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4,25 L4,14 A12,9 0 0 1 28,14 L28,25' stroke='%23B8797C' stroke-width='2.6' stroke-linecap='round' fill='none'/><circle cx='16' cy='6' r='2.8' fill='%23C9B28A'/></svg>">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    
+    <!-- Private Dashboard Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-brand-name">Ananya</span>
+        <span class="sidebar-portal-tag">Pigment Atelier · Andhra</span>
+      </div>
+
+      <!-- Client Profile Summary in Sidebar -->
+      <div class="sidebar-client-card">
+        <img src="image/make%20(1).jpg" alt="Client Avatar" class="sidebar-client-avatar">
+        <div class="sidebar-client-info">
+          <h5>Alia Sharma</h5>
+          <span class="sidebar-client-tier">VIP Member</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs List -->
+      <ul class="sidebar-nav-menu">
+        <li class="sidebar-nav-item active">
+          <button type="button" data-tab="tab-overview">
+            <span class="nav-icon">📊</span>
+            <span>Dashboard Overview</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-appointments">
+            <span class="nav-icon">📅</span>
+            <span>Upcoming Appointments</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-book-consult">
+            <span class="nav-icon">✨</span>
+            <span>Book Consultation</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-book-touchup">
+            <span class="nav-icon">🔄</span>
+            <span>Book Touch-Up</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-history">
+            <span class="nav-icon">🖼️</span>
+            <span>Before & After History</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-aftercare">
+            <span class="nav-icon">📋</span>
+            <span>Aftercare Instructions</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-reminders">
+            <span class="nav-icon">⏰</span>
+            <span>Touch-Up Schedule</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-invoices">
+            <span class="nav-icon">💳</span>
+            <span>Payments & Invoices</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-profile">
+            <span class="nav-icon">👤</span>
+            <span>My Skin Profile</span>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button type="button" data-tab="tab-notifications">
+            <span class="nav-icon">🔔</span>
+            <span>Notifications</span>
+            <span class="sidebar-badge">2</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Sidebar Footer / Logout -->
+      <div class="sidebar-footer">
+        <button type="button" class="btn-sidebar-logout">
+          <span>🚪 Log Out of Portal</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main">
+      
+      <!-- Topbar Header -->
+      <header class="dashboard-topbar">
+        <div class="dashboard-topbar-left">
+          <button type="button" class="topbar-mobile-toggle" aria-label="Toggle sidebar">☰</button>
+          <h2 class="topbar-page-title">Dashboard Overview</h2>
+        </div>
+
+        <div class="dashboard-topbar-right" style="display:flex; align-items:center; gap:10px;">
+          <button type="button" class="btn-nav-icon theme-toggle-btn" aria-label="Toggle theme" title="Toggle Dark/Light Mode">
+            <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button type="button" class="btn-nav-icon rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR">
+            <span class="rtl-label">RTL</span>
+          </button>
+          <a href="index.html" class="btn-luxury btn-outline" style="padding:6px 16px; font-size:0.78rem;">Public Site ↗</a>
+          <button type="button" class="topbar-notification-btn" onclick="document.querySelector('[data-tab=\'tab-notifications\']').click()" aria-label="View notifications">
+            <span>🔔</span>
+            <span class="topbar-notification-dot"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Dashboard Body Container -->
+      <div class="dashboard-body-container">
+        
+        <!-- ==========================================
+             TAB 1: DASHBOARD OVERVIEW
+             ========================================== -->
+        <div class="dashboard-tab-pane active" id="tab-overview">
+          
+          <!-- Key Stats Cards -->
+          <div class="dashboard-stats-grid">
+            <div class="dash-stat-card">
+              <div class="dash-stat-icon-wrap">📅</div>
+              <div class="dash-stat-info">
+                <h6>Next Appointment</h6>
+                <div class="dash-stat-val">14 OCT 2026</div>
+                <span style="font-size:0.75rem; color:var(--color-rose-dark);">11:30 AM · Maya Lin</span>
+              </div>
+            </div>
+
+            <div class="dash-stat-card">
+              <div class="dash-stat-icon-wrap">✨</div>
+              <div class="dash-stat-info">
+                <h6>Healing Status</h6>
+                <div class="dash-stat-val">Day 7 of 42</div>
+                <span style="font-size:0.75rem; color:#276749;">Stage 2: Micro-Flaking</span>
+              </div>
+            </div>
+
+            <div class="dash-stat-card">
+              <div class="dash-stat-icon-wrap">💎</div>
+              <div class="dash-stat-info">
+                <h6>Membership Tier</h6>
+                <div class="dash-stat-val">VIP Atelier</div>
+                <span style="font-size:0.75rem; color:var(--color-champagne-dark);">Complimentary Touch-Ups</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Appointment Card (Signature Feature) -->
+          <div class="appointment-card" id="overviewAppointmentCard">
+            <!-- Populated dynamically by dashboard.js -->
+          </div>
+
+          <!-- Healing Stage Progress Snapshot -->
+          <div class="healing-progress-container">
+            <div class="healing-tracker-header">
+              <div>
+                <h3 class="font-serif" style="font-size:1.4rem; margin-bottom:4px;">Active Healing Tracker</h3>
+                <p style="font-size:0.86rem; color:var(--color-text-muted); margin:0;">Lip Blush & Velvet Neutralization (Procedure: 10 Sep 2026)</p>
+              </div>
+              <span class="badge-lab" style="margin:0;"><span class="dot"></span> 40% Completed</span>
+            </div>
+
+            <div class="healing-timeline-bar-wrapper">
+              <div class="healing-track-line">
+                <div class="healing-track-fill" id="healingTrackFill" style="width:40%;"></div>
+              </div>
+              <div class="healing-stage-nodes" id="healingNodesContainer">
+                <!-- Dynamically injected -->
+              </div>
+            </div>
+
+            <div style="background:var(--bg-porcelain-light); border:1px solid var(--color-border); border-radius:var(--border-radius-md); padding:18px; margin-top:24px;">
+              <h5 id="currentStageName" style="font-size:0.95rem; color:var(--color-espresso); margin-bottom:6px;">Current: Stage 2 — Micro-Flaking (Day 4–10)</h5>
+              <p id="currentStageDesc" style="font-size:0.86rem; color:var(--color-text-muted); margin:0;">
+                Natural shedding of superficial crust. DO NOT pick or scrub. Apply thin layer of sterile aftercare balm morning and evening.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==========================================
+             TAB 2: UPCOMING APPOINTMENTS
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-appointments">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+            <div>
+              <h3 class="font-serif">Scheduled Appointments</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">Review and confirm your upcoming studio visits.</p>
+            </div>
+            <button type="button" class="btn-luxury btn-primary" onclick="document.querySelector('[data-tab=\'tab-book-consult\']').click()">+ Book New Session</button>
+          </div>
+
+          <div id="appointmentsListContainer">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 3: BOOK CONSULTATION
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-book-consult">
+          <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); padding:36px; max-width:800px;">
+            <div class="badge-lab"><span class="dot"></span> In-Studio Assessment</div>
+            <h3 class="font-serif" style="margin-bottom:8px;">Schedule a Bespoke Consultation</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:28px;">
+              Select your procedure and preferred master artist for a customized 30-minute facial mapping session in Andhra.
+            </p>
+
+            <form id="dashConsultationForm">
+              <div class="form-group">
+                <label class="form-label" for="dashBookService">Desired Treatment</label>
+                <select id="dashBookService" class="form-select">
+                  <option value="Nanoblading Feathering">Nanoblading Feathering (Oily/Sensitive Skin)</option>
+                  <option value="Microblading 3D Strokes">Hyper-Realistic Microblading (Normal/Dry)</option>
+                  <option value="Ombre Powder Brows">Velvet Ombré Powder Brows</option>
+                  <option value="Lip Blush & Neutralization">Lip Blush & Melanin Neutralization</option>
+                  <option value="Eyeliner Tightline">Smudge-Proof Lash-Line Tattoo</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="dashBookArtist">Select Master Artist</label>
+                <select id="dashBookArtist" class="form-select">
+                  <option value="Ananya">Ananya (Founder & Master Artist)</option>
+                  <option value="Maya Lin">Maya Lin (Senior Brow Architect)</option>
+                  <option value="Sonia Patel">Sonia Patel (Senior Lip Specialist)</option>
+                </select>
+              </div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="form-group">
+                  <label class="form-label" for="dashBookDate">Preferred Date</label>
+                  <input type="date" id="dashBookDate" class="form-control" value="2026-10-20" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="dashBookTime">Preferred Time</label>
+                  <select id="dashBookTime" class="form-select">
+                    <option value="10:00 AM">10:00 AM (Morning Slot)</option>
+                    <option value="11:30 AM">11:30 AM (Morning Slot)</option>
+                    <option value="02:30 PM" selected>02:30 PM (Afternoon Slot)</option>
+                    <option value="04:30 PM">04:30 PM (Evening Slot)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="dashBookNotes">Special Requests / Skin Concerns</label>
+                <textarea id="dashBookNotes" class="form-control" rows="3" placeholder="e.g. Previous microblading from 2024, sensitive forehead, etc."></textarea>
+              </div>
+
+              <button type="submit" class="btn-luxury btn-rose" style="width:100%; margin-top:8px;">
+                Confirm In-Studio Consultation
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 4: BOOK TOUCH-UP
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-book-touchup">
+          <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); padding:36px; max-width:800px;">
+            <div class="badge-lab"><span class="dot"></span> Loyalty Touch-Up Rates</div>
+            <h3 class="font-serif" style="margin-bottom:8px;">Book a Maintenance Touch-Up</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:28px;">
+              Calculate your discounted loyalty rate based on elapsed time from your previous procedure.
+            </p>
+
+            <div class="form-group">
+              <label class="form-label" for="touchUpIntervalSelect">Time Elapsed Since Last Session</label>
+              <select id="touchUpIntervalSelect" class="form-select">
+                <option value="6weeks">6 to 8 Weeks Post-Procedure (Perfecting Touch-Up)</option>
+                <option value="6months">6 to 12 Months (Color Boost)</option>
+                <option value="12months" selected>12 to 18 Months (Annual Refresh)</option>
+                <option value="18months">18 to 24 Months (Full Arch Refresh)</option>
+                <option value="24months">24+ Months (Complete Renewal)</option>
+              </select>
+            </div>
+
+            <div style="background:var(--bg-porcelain-light); border:1px solid var(--color-champagne); border-radius:var(--border-radius-md); padding:22px; margin:24px 0; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <span style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-taupe-dark);">Your Calculated Rate</span>
+                <h4 class="font-serif" id="calculatedTouchUpPrice" style="font-size:1.8rem; color:var(--color-espresso); margin-top:2px;">₹12,500</h4>
+              </div>
+              <button type="button" class="btn-luxury btn-champagne" id="btnBookCalculatedTouchUp">Reserve Touch-Up Slot</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 5: PRIVATE BEFORE & AFTER HISTORY
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-history">
+          <div style="margin-bottom:24px;">
+            <h3 class="font-serif">Private Procedural Vault</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted);">
+              Confidential before/after comparison records, custom pigment formulas, and needle specifications for your treatments.
+            </p>
+          </div>
+
+          <div id="historyRecordContainer">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 6: AFTERCARE INSTRUCTIONS
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-aftercare">
+          <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); padding:36px; margin-bottom:30px;">
+            <div class="badge-lab"><span class="dot"></span> Clinical Protocol</div>
+            <h3 class="font-serif" style="margin-bottom:8px;">Day-by-Day Aftercare Protocol</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:24px;">
+              Follow this dermatological routine to ensure up to 96% pigment retention. Check off your daily routine below.
+            </p>
+
+            <div class="aftercare-checklist">
+              <div class="aftercare-check-item">
+                <input type="checkbox" id="chk1" checked>
+                <label for="chk1" style="font-size:0.9rem; color:var(--color-espresso); cursor:pointer;">
+                  <strong>Morning:</strong> Cleanse gently with sterile saline wipe. Do not rub or soak under direct shower stream.
+                </label>
+              </div>
+
+              <div class="aftercare-check-item">
+                <input type="checkbox" id="chk2" checked>
+                <label for="chk2" style="font-size:0.9rem; color:var(--color-espresso); cursor:pointer;">
+                  <strong>Midday:</strong> Apply rice-grain amount of Swiss healing ointment using a clean cotton swab.
+                </label>
+              </div>
+
+              <div class="aftercare-check-item">
+                <input type="checkbox" id="chk3">
+                <label for="chk3" style="font-size:0.9rem; color:var(--color-espresso); cursor:pointer;">
+                  <strong>Evening:</strong> Re-apply light barrier balm before bed. Sleep on a silk/satin pillowcase on your back.
+                </label>
+              </div>
+
+              <div class="aftercare-check-item">
+                <input type="checkbox" id="chk4">
+                <label for="chk4" style="font-size:0.9rem; color:var(--color-espresso); cursor:pointer;">
+                  <strong>Strict Avoidance:</strong> No saunas, steam rooms, swimming, heavy workouts, or active AHA/Retinol for 10 days.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 7: TOUCH-UP SCHEDULE & REMINDERS
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-reminders">
+          <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); padding:36px; max-width:800px;">
+            <h3 class="font-serif" style="margin-bottom:8px;">Touch-Up Countdown & Reminders</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:28px;">
+              Your personalized timeline to keep your brow and lip pigments in optimal condition.
+            </p>
+
+            <div style="background:var(--bg-porcelain-light); border:1px solid var(--color-border); border-radius:var(--border-radius-md); padding:24px; margin-bottom:24px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span style="font-weight:700; color:var(--color-espresso);">Next Recommended Refresh</span>
+                <span class="badge-lab" style="margin:0;"><span class="dot"></span> Active Calendar</span>
+              </div>
+              <h4 class="font-serif" style="font-size:1.6rem; color:var(--color-rose-dark); margin:0;">September 2027 (12-Month Mark)</h4>
+              <p style="font-size:0.85rem; color:var(--color-text-muted); margin-top:8px;">
+                We will send you automated priority booking reminders 30 days prior so you can secure your preferred weekend slot in Andhra.
+              </p>
+            </div>
+
+            <h5 style="font-size:0.95rem; margin-bottom:12px;">Notification Preferences</h5>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <label style="display:flex; align-items:center; gap:10px; font-size:0.9rem; cursor:pointer;">
+                <input type="checkbox" checked style="accent-color:var(--color-rose);"> WhatsApp Notifications (+91 98450 12345)
+              </label>
+              <label style="display:flex; align-items:center; gap:10px; font-size:0.9rem; cursor:pointer;">
+                <input type="checkbox" checked style="accent-color:var(--color-rose);"> Email Calendar Invites (alia.sharma@example.com)
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 8: PAYMENTS & INVOICES
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-invoices">
+          <div style="margin-bottom:24px;">
+            <h3 class="font-serif">Payments & Official Tax Invoices</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted);">
+              View all itemized receipts, deposit balances, and download tax invoices for your procedures.
+            </p>
+          </div>
+
+          <div class="invoice-table-wrapper">
+            <table class="invoice-table">
+              <thead>
+                <tr>
+                  <th>Invoice No.</th>
+                  <th>Date</th>
+                  <th>Treatment Details</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Payment Method</th>
+                  <th>Receipt</th>
+                </tr>
+              </thead>
+              <tbody id="invoicesTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 9: MY SKIN PROFILE
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-profile">
+          <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); padding:36px; max-width:800px;">
+            <div class="badge-lab"><span class="dot"></span> Confidential Record</div>
+            <h3 class="font-serif" style="margin-bottom:8px;">My Dermatological Profile</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:28px;">
+              Keep your skin type, sensitivity history, and emergency contact details updated.
+            </p>
+
+            <form onsubmit="event.preventDefault(); showToast('Profile details updated successfully!');">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="form-group">
+                  <label class="form-label" for="profileName">Full Legal Name</label>
+                  <input type="text" id="profileName" class="form-control" value="Alia Sharma">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="profileEmail">Email Address</label>
+                  <input type="email" id="profileEmail" class="form-control" value="alia.sharma@example.com">
+                </div>
+              </div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="form-group">
+                  <label class="form-label" for="profilePhone">Mobile / WhatsApp</label>
+                  <input type="tel" id="profilePhone" class="form-control" value="+91 98450 12345">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="profileSkinType">Fitzpatrick Skin Profile</label>
+                  <input type="text" id="profileSkinType" class="form-control" value="Type III (Wheatish - Warm)" readonly style="background:var(--bg-porcelain-light);">
+                </div>
+              </div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="form-group">
+                  <label class="form-label" for="profilePatchTest">Patch Test Status</label>
+                  <input type="text" id="profilePatchTest" class="form-control" value="Passed (12 Jan 2026)" readonly style="background:var(--bg-porcelain-light);">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="profileEmergency">Emergency Contact</label>
+                  <input type="text" id="profileEmergency" class="form-control" value="Rohan Sharma (+91 98450 98765)">
+                </div>
+              </div>
+
+              <button type="submit" class="btn-luxury btn-primary" style="margin-top:8px;">Save Profile Changes</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             TAB 10: NOTIFICATIONS
+             ========================================== -->
+        <div class="dashboard-tab-pane" id="tab-notifications">
+          <div style="margin-bottom:24px;">
+            <h3 class="font-serif">Notifications & Reminders</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted);">
+              Updates regarding appointments, aftercare milestones, and studio messages.
+            </p>
+          </div>
+
+          <div id="notificationsListContainer">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

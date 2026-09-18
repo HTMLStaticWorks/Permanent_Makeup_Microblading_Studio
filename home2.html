@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya Pigment Atelier · Home 2 | Editorial Masterclass</title>
+  <meta name="description" content="Editorial Edition of Ananya Atelier in Andhra. Hospital-grade microblading, acoustic nanoblading, and dark lip neutralization by PhiBrows master artists.">
+  
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4,25 L4,14 A12,9 0 0 1 28,14 L28,25' stroke='%23B8797C' stroke-width='2.6' stroke-linecap='round' fill='none'/><circle cx='16' cy='6' r='2.8' fill='%23C9B28A'/></svg>">
+</head>
+<body>
+
+  <!-- Interactive Precision Cursor -->
+  <div class="aa-cursor" aria-hidden="true">
+    <div class="aa-cursor__ring"></div>
+    <div class="aa-cursor__dot"></div>
+    <svg class="aa-cursor__pen" viewBox="0 0 44 44" fill="none">
+      <path d="M30.4 3.2l6.9 4-17.6 30.5-6.9-4L30.4 3.2z" fill="#211D1B"/>
+      <path d="M30.4 3.2l6.9 4-2.4 4.2-6.9-4 2.4-4.2z" fill="#C9B28A"/>
+      <path d="M12.8 33.7l6.9 4-6.1 3.6-.8-7.6z" fill="#B8797C"/>
+    </svg>
+  </div>
+
+  <!-- Ambient Light Flares -->
+  <div class="aa-flare aa-flare--a"></div>
+  <div class="aa-flare aa-flare--b"></div>
+
+  <!-- Top Notice Announcement Bar -->
+  <div class="top-notice-bar">
+    <span><span class="badge-dot"></span> Editorial Masterclass Edition · Andhra Studio</span>
+    <span>Only <strong data-slots>3</strong> bespoke consultation slots remaining this week</span>
+    <a href="login.html" style="color:var(--color-champagne); text-decoration:underline; font-weight:600;">Client Portal ↗</a>
+  </div>
+
+  <!-- Atelier Navbar -->
+  <header class="atelier-navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Ananya Atelier Home" data-magnetic>
+        <svg class="brand-logo-arch" viewBox="0 0 34 26" fill="none">
+          <path d="M3,24 L3,14 A14,11 0 0 1 31,14 L31,24" stroke="#B8797C" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="17" cy="6" r="2.5" fill="#C9B28A"/>
+        </svg>
+        <div class="brand-title">
+          <span class="brand-name">Ananya</span>
+          <span class="brand-tagline">Pigment Atelier · Andhra</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home 1</a></li>
+          <li><a href="home2.html" class="nav-link active">Home 2</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="artists.html" class="nav-link">Artists & Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing & FAQs</a></li>
+          <li class="mobile-drawer-cta" style="margin-top:14px; padding-top:14px; border-top:1px solid var(--color-border-light);">
+            <div style="display:flex; gap:10px; align-items:center; justify-content:space-between; margin-bottom:12px;">
+              <button type="button" class="btn-nav-icon theme-toggle-btn" aria-label="Toggle theme" title="Toggle Dark/Light Mode" style="flex:1; width:auto; height:42px; border-radius:var(--border-radius-md); display:inline-flex; gap:8px;">
+                <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <span>Theme</span>
+              </button>
+              <button type="button" class="btn-nav-icon rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR" style="flex:1; width:auto; height:42px; border-radius:var(--border-radius-md); display:inline-flex; gap:8px;">
+                <span class="rtl-label">RTL</span>
+              </button>
+            </div>
+            <a href="login.html" class="btn-portal-pill" style="width:100%; justify-content:center; padding:12px 16px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              Client Portal ↗
+            </a>
+          </li>
+          <li class="mobile-drawer-cta" style="margin-top:8px;">
+            <button type="button" class="btn-luxury btn-rose" style="width:100%;" data-open-consultation>Book Consultation</button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-nav-icon theme-toggle-btn" aria-label="Toggle theme" title="Toggle Dark/Light Mode" data-magnetic>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button type="button" class="btn-nav-icon rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR" data-magnetic>
+          <span class="rtl-label">RTL</span>
+        </button>
+        <a href="login.html" class="btn-nav-icon portal-nav-btn" aria-label="Client Portal" title="Client Portal" data-magnetic>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+        <button type="button" class="btn-luxury btn-primary" data-open-consultation data-magnetic>Book Consultation</button>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    
+    <!-- HOME 2: EDITORIAL CINEMATIC HERO -->
+    <section class="atelier-hero" style="padding: clamp(50px, 8vw, 90px) 0 clamp(40px, 6vw, 80px); background: radial-gradient(circle at 50% 0%, rgba(201, 178, 138, 0.22), transparent 70%), var(--bg-porcelain);">
+      <div class="container-atelier text-center" style="max-width:980px; margin:0 auto;" data-reveal>
+        <div class="badge-lab"><span class="dot"></span> Clinical Pigment Mastery · Andhra Atelier</div>
+        <h1 class="hero-title font-serif">
+          Facial Architecture, <em>Sculpted with Microscopic Precision</em>
+        </h1>
+        <p class="section-subtitle" style="max-width:760px; margin:0 auto 36px; font-size:1.15rem;">
+          Specialized in South Asian skin undertones and hyper-realistic pigment integration. Certified by the world-renowned PhiBrows Academy in Belgrade.
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:48px;">
+          <button type="button" class="btn-luxury btn-rose" data-open-consultation data-magnetic>Reserve Private Session</button>
+          <a href="#healed-results" class="btn-luxury btn-outline" data-magnetic>Explore Healed Results ↓</a>
+        </div>
+
+        <!-- 4 Stat Badges Center Strip -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:20px; padding:28px; background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--border-radius-lg); box-shadow:var(--shadow-sm); margin-bottom:60px;">
+          <div class="stat-item" style="text-align:center;">
+            <div class="stat-number">99.4%</div>
+            <div class="stat-label">Symmetry Precision</div>
+          </div>
+          <div class="stat-item" style="text-align:center;">
+            <div class="stat-number">10,000+</div>
+            <div class="stat-label">Procedures Completed</div>
+          </div>
+          <div class="stat-item" style="text-align:center;">
+            <div class="stat-number">Belgrade</div>
+            <div class="stat-label">Master Certified</div>
+          </div>
+          <div class="stat-item" style="text-align:center;">
+            <div class="stat-number">0%</div>
+            <div class="stat-label">Tissue Scarring</div>
+          </div>
+        </div>
+
+        <!-- Hero 2 Interactive Comparison Showcase -->
+        <div style="text-align:center; margin-bottom:20px;">
+          <span class="badge-lab" style="background:var(--color-champagne-light);"><span class="dot"></span> Live Slide Comparison · Healed Week 8</span>
+        </div>
+        
+        <div class="before-after-container" id="home2Slider" style="aspect-ratio:16/10; max-width:920px; margin:0 auto 20px;">
+          <div class="ba-image-wrapper ba-image-before">
+            <img src="image/before%20after.jpg" alt="Client Before Microblading Treatment">
+            <span class="ba-label ba-label-before">Before Treatment</span>
+          </div>
+          <div class="ba-image-wrapper ba-image-after" style="width: 50%;">
+            <img src="image/before%20after1.jpg" alt="Client Healed Result After Touch-Up">
+            <span class="ba-label ba-label-after">Healed Heptad Stroke</span>
+          </div>
+          <div class="ba-slider-handle" style="left: 50%;">
+            <div class="ba-handle-button">↔</div>
+          </div>
+        </div>
+        <p style="font-size:0.84rem; color:var(--color-text-muted);">
+          Drag or swipe slider to inspect hair-stroke alignment and pigment retention.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 4 CLINICAL PILLARS (EDITORIAL FORMAT) -->
+    <section class="section-atelier" style="background:var(--bg-porcelain-light); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+      <div class="container-atelier" data-reveal>
+        <div class="section-header">
+          <div class="badge-lab"><span class="dot"></span> The Atelier Methodology</div>
+          <h2>The Four Pillars of Clinical Permanence</h2>
+          <p class="section-subtitle">
+            Our dual-layer protocol bridges dermatological safety with bespoke European aesthetic design.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
+          
+          <div class="service-card" style="padding:32px 24px; text-align:center; align-items:center;">
+            <div style="width:54px; height:54px; border-radius:50%; background:var(--color-champagne-light); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin-bottom:18px; color:var(--color-espresso);">
+              📐
+            </div>
+            <h3 class="font-serif" style="font-size:1.35rem; margin-bottom:10px;">Golden Ratio Mapping</h3>
+            <p style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.6;">
+              Calculated using the anatomical golden divider to complement your unique bone structure and natural brow ridge.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding:32px 24px; text-align:center; align-items:center;">
+            <div style="width:54px; height:54px; border-radius:50%; background:var(--color-rose-light); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin-bottom:18px; color:var(--color-espresso);">
+              🧪
+            </div>
+            <h3 class="font-serif" style="font-size:1.35rem; margin-bottom:10px;">Organic Mineral Pigments</h3>
+            <p style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.6;">
+              Medical-grade, heavy-metal-free formulas that never fade into unwanted blue, red, or purple discoloration over time.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding:32px 24px; text-align:center; align-items:center;">
+            <div style="width:54px; height:54px; border-radius:50%; background:var(--color-champagne-light); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin-bottom:18px; color:var(--color-espresso);">
+              ✨
+            </div>
+            <h3 class="font-serif" style="font-size:1.35rem; margin-bottom:10px;">Acoustic Single Needle</h3>
+            <p style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.6;">
+              Delivers micro-dots into the upper dermis at 120Hz frequency, reducing trauma to zero and accelerating cellular repair.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding:32px 24px; text-align:center; align-items:center;">
+            <div style="width:54px; height:54px; border-radius:50%; background:var(--color-rose-light); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin-bottom:18px; color:var(--color-espresso);">
+              🛡️
+            </div>
+            <h3 class="font-serif" style="font-size:1.35rem; margin-bottom:10px;">Hospital-Grade Asepsis</h3>
+            <p style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.6;">
+              Single-use sealed Swiss cartridges opened in front of you, performed in an autoclave-sterilized studio in Andhra.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE TREATMENT MENU -->
+    <section class="section-atelier">
+      <div class="container-atelier" data-reveal>
+        <div class="section-header">
+          <div class="badge-lab"><span class="dot"></span> Tailored Treatment Menu</div>
+          <h2>Bespoke Permanent Artistry</h2>
+          <p class="section-subtitle">
+            Every procedure is customized with specific needle gauges and tone chemistry for South Asian undertones.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Card 1 -->
+          <div class="service-card" data-reveal>
+            <div class="service-card-media">
+              <img src="image/make%20(9).jpg" alt="Hyper-Realistic Microblading Feathering">
+              <span class="service-tag">Signature Brow Craft</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title font-serif">Hyper-Realistic Microblading</h3>
+              <p class="service-desc">
+                Fine hair-stroke simulation hand-drawn to mirror your organic growth pattern. Ideal for normal to dry skin.
+              </p>
+              <div class="service-meta-list">
+                <div class="service-meta-item"><span>Longevity:</span> <strong>12–18 Months</strong></div>
+                <div class="service-meta-item"><span>Skin Type:</span> <strong>Normal / Dry</strong></div>
+                <div class="service-meta-item"><span>Comfort:</span> <strong>2-Step Lidocaine</strong></div>
+              </div>
+              <div class="service-card-footer">
+                <div class="service-price">₹32,000</div>
+                <button type="button" class="btn-luxury btn-primary" data-open-consultation data-magnetic>Reserve Session</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card" style="border:1.5px solid var(--color-champagne);" data-reveal>
+            <div class="service-card-media">
+              <img src="image/make%20(10).jpg" alt="Acoustic Nanoblading and Ombre Hybrid">
+              <span class="service-tag" style="background:var(--color-espresso); color:var(--color-champagne);">Most Requested</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title font-serif">Digital Acoustic Nanoblading</h3>
+              <p class="service-desc">
+                High-definition digital single-needle strokes with zero slicing. Superb retention for oily, sensitive, or mature skin.
+              </p>
+              <div class="service-meta-list">
+                <div class="service-meta-item"><span>Longevity:</span> <strong>18–24 Months</strong></div>
+                <div class="service-meta-item"><span>Skin Type:</span> <strong>All Skin / Oily</strong></div>
+                <div class="service-meta-item"><span>Precision:</span> <strong>0.18mm Needle</strong></div>
+              </div>
+              <div class="service-card-footer">
+                <div class="service-price" style="color:var(--color-rose-dark);">₹38,000</div>
+                <button type="button" class="btn-luxury btn-rose" data-open-consultation data-magnetic>Reserve Session</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card" data-reveal>
+            <div class="service-card-media">
+              <img src="image/make%20(11).jpg" alt="Velvet Lip Blush and Melanin Neutralization">
+              <span class="service-tag">Melanin Neutralization</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title font-serif">Lip Blush & Neutralization</h3>
+              <p class="service-desc">
+                Two-stage protocol to correct cool undertones into warm peach, terracotta, and soft velvet rose tones.
+              </p>
+              <div class="service-meta-list">
+                <div class="service-meta-item"><span>Longevity:</span> <strong>2–3 Years</strong></div>
+                <div class="service-meta-item"><span>Protocol:</span> <strong>2-Session Neutralize</strong></div>
+                <div class="service-meta-item"><span>Finish:</span> <strong>Velvet Tint</strong></div>
+              </div>
+              <div class="service-card-footer">
+                <div class="service-price">₹28,000</div>
+                <button type="button" class="btn-luxury btn-primary" data-open-consultation data-magnetic>Reserve Session</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HEALED PRECISION GALLERY (HOME 2) -->
+    <section class="section-atelier" id="healed-results" style="background:var(--bg-porcelain-light); border-top:1px solid var(--color-border);">
+      <div class="container-atelier" data-reveal>
+        <div class="section-header">
+          <div class="badge-lab"><span class="dot"></span> Macro Lens Proof</div>
+          <h2>Verified Healed Gallery</h2>
+          <p class="section-subtitle">
+            Unfiltered results captured under 5500K clinical ring lighting at 8 to 12 weeks healed.
+          </p>
+        </div>
+
+        <div class="precision-gallery-grid">
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/make%20(2).jpg" alt="Healed Brow Symmetry">
+            <div class="media-overlay"></div>
+          </div>
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/make%20(3).jpg" alt="Velvet Lip Blush Saturation">
+            <div class="media-overlay"></div>
+          </div>
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/make%20(4).jpg" alt="Nanoblading Single Needle Detail">
+            <div class="media-overlay"></div>
+          </div>
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/make%20(5).jpg" alt="Ombre Powder Gradient Result">
+            <div class="media-overlay"></div>
+          </div>
+        </div>
+
+        <!-- 3 Mini Comparative Viewports -->
+        <div class="ba-mini-grid" style="margin-top:32px;">
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/before%20after2.jpg" alt="Before and After Lip Blush">
+          </div>
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/before%20afterc.jpg" alt="Before and After Combo Brows">
+          </div>
+          <div class="media-keep-pace-wrap" data-reveal>
+            <img src="image/before%20afterx.jpg" alt="Before and After Lash Line">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MASTER ARTISTS HIGHLIGHT -->
+    <section class="section-atelier">
+      <div class="container-atelier" data-reveal>
+        <div class="section-header">
+          <div class="badge-lab"><span class="dot"></span> Certified Specialists</div>
+          <h2>The Atelier Resident Artists</h2>
+          <p class="section-subtitle">
+            Internationally certified master practitioners performing under hospital-grade sterility protocols in Andhra.
+          </p>
+        </div>
+
+        <div class="artist-grid">
+          
+          <div class="service-card" style="border:1.5px solid var(--color-champagne);" data-reveal>
+            <div class="artist-card-media">
+              <img src="image/make%20(19).jpg" alt="Ananya Founder & Master Pigmentologist">
+              <span class="service-tag" style="background:var(--color-espresso); color:var(--color-champagne);">Founder & Master</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title font-serif">Ananya</h3>
+              <p style="font-size:0.8rem; color:var(--color-rose-dark); font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px; text-align:center;">
+                PhiBrows Master Certified · 10+ Years Experience
+              </p>
+              <p class="service-desc">
+                Pioneer of South Asian facial micro-pigmentation in Andhra. Specializes in complex reconstructive feathering.
+              </p>
+              <div class="service-card-footer">
+                <button type="button" class="btn-luxury btn-primary" style="width:100%;" data-open-consultation data-magnetic>Book With Ananya</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="artist-card-media">
+              <img src="image/make%20(20).jpg" alt="Maya Lin Senior Brow Architect">
+              <span class="service-tag">Senior Brow Architect</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title font-serif">Maya Lin</h3>
+              <p style="font-size:0.8rem; color:var(--color-rose-dark); font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px; text-align:center;">
+                London Institute Certified · 6 Years Experience
+              </p>
+              <p class="service-desc">
+                Leading specialist for oily and sensitive skin nanoblading transformations with zero stroke blurring.
+              </p>
+              <div class="service-card-footer">
+                <button type="button" class="btn-luxury btn-outline" style="width:100%;" data-open-consultation data-magnetic>Book With Maya</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="artist-card-media">
+              <img src="image/make%20(21).jpg" alt="Sonia Patel Lip Pigment Specialist">
+              <span class="service-tag">Melanin Correction Lead</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title font-serif">Sonia Patel</h3>
+              <p style="font-size:0.8rem; color:var(--color-rose-dark); font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px; text-align:center;">
+                Seoul PMU Certified · 5 Years Experience
+              </p>
+              <p class="service-desc">
+                Formulator of the studio's proprietary peach-terracotta undertone neutralization protocol.
+              </p>
+              <div class="service-card-footer">
+                <button type="button" class="btn-luxury btn-outline" style="width:100%;" data-open-consultation data-magnetic>Book With Sonia</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CANDIDACY CHECKER -->
+    <section class="section-atelier" style="background:var(--bg-porcelain-light); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+      <div class="container-atelier" data-reveal>
+        <div class="section-header">
+          <div class="badge-lab"><span class="dot"></span> 60-Second Assessment</div>
+          <h2>Find Your Ideal Treatment Protocol</h2>
+          <p class="section-subtitle">
+            Answer two clinical questions regarding your skin type and aesthetic goal to receive your tailored recommendation.
+          </p>
+        </div>
+
+        <div class="candidacy-card">
+          
+          <div class="quiz-step active" data-step="0">
+            <h4 class="font-serif" style="font-size:1.3rem; margin-bottom:8px;">Question 1: What is your primary skin type in the T-Zone?</h4>
+            <p style="font-size:0.88rem; color:var(--color-text-muted);">Skin oiliness determines whether manual feathering or digital acoustic needles will yield optimal healed retention.</p>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option-btn" data-answer="dry">
+                <h5>Normal to Dry Skin</h5>
+                <p>Minimal visible pores, rarely shiny</p>
+              </button>
+              <button type="button" class="quiz-option-btn" data-answer="oily">
+                <h5>Oily or Combination Skin</h5>
+                <p>Visible pores, midday shine, sensitive</p>
+              </button>
+              <button type="button" class="quiz-option-btn" data-answer="mature">
+                <h5>Delicate or Mature Skin</h5>
+                <p>Fine skin texture requiring zero tissue cutting</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="1">
+            <h4 class="font-serif" style="font-size:1.3rem; margin-bottom:8px;">Question 2: What is your desired daily aesthetic?</h4>
+            <p style="font-size:0.88rem; color:var(--color-text-muted);">Choose between organic bare-faced hair strokes or structured powder density.</p>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option-btn" data-answer="natural">
+                <h5>Bare-Faced Natural</h5>
+                <p>Undetectable micro-strokes that mimic natural hair</p>
+              </button>
+              <button type="button" class="quiz-option-btn" data-answer="hybrid">
+                <h5>Soft Gradient Definition</h5>
+                <p>Crisp front strokes with velvety powder tail</p>
+              </button>
+              <button type="button" class="quiz-option-btn" data-answer="lips">
+                <h5>Lip Tint & Neutralization</h5>
+                <p>Correct dark melanin and restore youthful flush</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="2" style="padding:20px 0;">
+            <span class="badge-lab" style="background:var(--color-champagne-light);"><span class="dot"></span> Your Tailored Recommendation</span>
+            <h3 class="font-serif" id="quizResultTitle" style="font-size:1.8rem; margin:14px 0 10px;">Hyper-Realistic Microblading Feathering</h3>
+            <p id="quizResultDesc" style="font-size:1rem; color:var(--color-text-muted); max-width:620px; margin:0 auto 28px;">
+              Your normal/dry skin profile is the gold standard candidate for manual hand-drawn microblading hair strokes.
+            </p>
+            <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+              <button type="button" class="btn-luxury btn-rose" data-open-consultation data-magnetic>Book Recommended Session</button>
+              <button type="button" class="btn-luxury btn-outline btn-quiz-restart" data-magnetic>Restart Quiz</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS -->
+    <section class="section-atelier">
+      <div class="container-atelier" data-reveal>
+        <div class="section-header">
+          <div class="badge-lab"><span class="dot"></span> Verified Client Reviews</div>
+          <h2>Words from Our Atelier Patrons</h2>
+          <p class="section-subtitle">
+            Hear from doctors, corporate executives, and brides across Andhra who chose Ananya Atelier.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:28px;">
+          
+          <div class="testimonial-card" data-reveal>
+            <p class="testimonial-card-text">
+              "As a dermatologist, I was extremely skeptical about permanent makeup. Ananya’s clinic-level asepsis, single-needle precision, and organic pigments blew me away. 14 months later, my nanoblading looks completely organic."
+            </p>
+            <div class="testimonial-card-author">
+              <img src="image/make%20(12).jpg" class="testimonial-avatar" alt="Dr. Radhika Sen">
+              <div>
+                <h5>Dr. Radhika Sen</h5>
+                <span>Dermatologist · Nanoblading Client</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal>
+            <p class="testimonial-card-text">
+              "I had severe hyperpigmentation on my upper lip that made me self-conscious without lipstick. Sonia neutralized the undertone over 2 sessions, and now my lips have a permanent natural rose glow."
+            </p>
+            <div class="testimonial-card-author">
+              <img src="image/make%20(13).jpg" class="testimonial-avatar" alt="Pooja Merchant">
+              <div>
+                <h5>Pooja Merchant</h5>
+                <span>Bridal Client · Lip Neutralization</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal>
+            <p class="testimonial-card-text">
+              "The private client portal gave me day-by-day healing instructions and direct access to my artist. The level of luxury and medical safety is unmatched anywhere in South India."
+            </p>
+            <div class="testimonial-card-author">
+              <img src="image/make%20(14).jpg" class="testimonial-avatar" alt="Zara Al-Mansoor">
+              <div>
+                <h5>Zara Al-Mansoor</h5>
+                <span>VIP Member · Ombré Hybrid Brows</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION CTA BANNER -->
+    <section class="section-atelier section-cta-banner" style="text-align:center;">
+      <div class="container-atelier" style="max-width:860px;" data-reveal>
+        <span class="badge-lab" style="background:rgba(201,178,138,0.2); color:var(--color-champagne);"><span class="dot" style="background:var(--color-champagne);"></span> Bespoke Appointment Booking</span>
+        <h2 style="margin:18px 0 20px;">Begin Your Facial Architecture Journey</h2>
+        <p style="font-size:1.15rem; margin-bottom:34px;">
+          Slots with Master Artist Ananya and senior resident specialists are strictly limited to ensure uncompromising clinical focus for every face.
+        </p>
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <button type="button" class="btn-luxury btn-rose" data-open-consultation data-magnetic>Book In-Studio Consultation</button>
+          <a href="login.html" class="btn-luxury btn-outline" style="border-color:var(--color-champagne); color:var(--color-champagne);" data-magnetic>Access Client Portal ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="atelier-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="home2.html" class="brand-logo" aria-label="Ananya Atelier Home" data-magnetic>
+          <svg class="brand-logo-arch" viewBox="0 0 34 26" fill="none" style="width:36px; height:28px;">
+            <path d="M3,24 L3,14 A14,11 0 0 1 31,14 L31,24" stroke="#B8797C" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="17" cy="6" r="2.8" fill="#C9B28A"/>
+          </svg>
+          <div class="brand-title">
+            <span class="brand-name">Ananya</span>
+            <span class="brand-tagline">Pigment Atelier · Andhra</span>
+          </div>
+        </a>
+        <p>
+          Luxury permanent makeup and micro-pigmentation atelier. Precision facial architecture built on dermatological safety and bespoke artistry in Andhra.
+        </p>
+        <div style="margin-top:20px; font-size:0.84rem; color:var(--color-taupe);">
+          <strong style="color:var(--color-champagne);">Atelier Location:</strong><br>
+          Bespoke PMU Atelier, Andhra Pradesh, India<br>
+          Direct Concierge: +91 98450 12345
+        </div>
+        <div class="footer-social-links" aria-label="Official Atelier Social Media Channels">
+          <a href="https://instagram.com" class="footer-social-icon" aria-label="Follow Ananya Atelier on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://youtube.com" class="footer-social-icon" aria-label="Watch Ananya Atelier on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="footer-social-icon" aria-label="Follow Ananya Atelier on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://pinterest.com" class="footer-social-icon" aria-label="Explore Ananya Atelier on Pinterest" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+              <path d="M8 20l4-9 4 9"></path>
+              <circle cx="12" cy="9" r="5"></circle>
+            </svg>
+          </a>
+          <a href="https://wa.me/919845012345" class="footer-social-icon" aria-label="Direct Concierge WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Treatments</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#microblading">Microblading</a></li>
+          <li><a href="services.html#nanoblading">Nanoblading</a></li>
+          <li><a href="services.html#powder">Ombré Powder Brows</a></li>
+          <li><a href="services.html#lipblush">Lip Blush & Neutralization</a></li>
+          <li><a href="services.html#eyeliner">Lash-Line Tattoo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Atelier</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home 1 (Studio)</a></li>
+          <li><a href="home2.html">Home 2 (Editorial)</a></li>
+          <li><a href="artists.html">Master Artists</a></li>
+          <li><a href="pricing.html">Pricing & Packages</a></li>
+          <li><a href="login.html">Client Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Private Concierge</h4>
+        <p style="font-size:0.88rem; color:var(--color-taupe); margin-bottom:16px;">
+          Existing client? Log in to your private portal to track healing stages, confirm appointments, and download receipts.
+        </p>
+        <a href="login.html" class="btn-luxury btn-champagne" style="padding:10px 20px; font-size:0.8rem; width:100%;" data-magnetic>Enter Client Portal</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Ananya Atelier. All Rights Reserved. Precision, Made Personal.</span>
+      <div style="display:flex; gap:20px;">
+        <a href="pricing.html#faqs">Contraindications</a>
+        <a href="pricing.html">Terms & Deposits</a>
+        <a href="login.html">Client Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Request Modal Dialog -->
+  <div class="atelier-modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="atelier-modal-card">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">×</button>
+      
+      <div class="badge-lab"><span class="dot"></span> Reserve Consultation</div>
+      <h3 id="modalTitle" class="font-serif" style="margin-bottom:8px;">Request Your Studio Consultation</h3>
+      <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:24px;">
+        Meet with our master artists in Andhra for a complete bone structure assessment and custom pigment trial.
+      </p>
+
+      <form id="consultationForm">
+        <div class="form-group">
+          <label class="form-label" for="cName">Full Name</label>
+          <input type="text" id="cName" class="form-control" placeholder="e.g. Priyadarshini Mehta" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cPhone">WhatsApp / Mobile Number</label>
+          <input type="tel" id="cPhone" class="form-control" placeholder="+91 98450 00000" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cService">Desired Treatment</label>
+          <select id="cService" class="form-select">
+            <option value="Microblading">Microblading Feathering</option>
+            <option value="Nanoblading">Nanoblading (Sensitive/Oily Skin)</option>
+            <option value="Ombre Powder">Ombré Powder Brows</option>
+            <option value="Lip Blush">Lip Blush & Melanin Neutralization</option>
+            <option value="Eyeliner">Lash-Line Enhancement / Wing</option>
+            <option value="Touch-up / Correction">Touch-Up or Color Correction</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cArtist">Preferred Artist</label>
+          <select id="cArtist" class="form-select">
+            <option value="Ananya">Ananya (Founder & Master Pigmentologist)</option>
+            <option value="Maya Lin">Maya Lin (Senior Brow Architect)</option>
+            <option value="Sonia Patel">Sonia Patel (Senior Lip Specialist)</option>
+            <option value="First Available">First Available Master Artist</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-luxury btn-rose" style="width:100%; margin-top:10px;" data-magnetic>Submit Consultation Request</button>
+      </form>
+
+      <div id="modalSuccess" style="display:none; text-align:center; padding:30px 10px;">
+        <div style="width:60px; height:60px; border-radius:50%; background:var(--color-champagne-light); color:var(--color-espresso); display:inline-flex; align-items:center; justify-content:center; font-size:1.8rem; margin-bottom:16px;">✓</div>
+        <h4 class="font-serif" style="font-size:1.5rem; margin-bottom:8px;">Consultation Request Received</h4>
+        <p style="font-size:0.92rem; color:var(--color-text-muted);">Our studio concierge will reach out to you via WhatsApp within 2 hours to confirm your private time slot in Andhra.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
