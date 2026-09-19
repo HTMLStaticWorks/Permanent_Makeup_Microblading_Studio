@@ -571,19 +571,23 @@
   text-transform: uppercase;
 }
 
-/* Responsive Dashboard System (1024px, 768px, 576px, 425px, 320px) */
 @media (max-width: 1024px) {
   .dashboard-sidebar {
     position: fixed;
     top: 0;
-    left: -290px;
+    left: 0;
     height: 100vh;
     z-index: 1050;
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.25);
-    transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(-100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
   }
   .dashboard-sidebar.mobile-open {
-    left: 0;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: all;
   }
   .topbar-mobile-toggle {
     display: flex;

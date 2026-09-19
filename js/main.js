@@ -45,46 +45,9 @@ function initIntroCurtain() {
    02. INTERACTIVE PEN & PRECISION RING CURSOR
    ========================================================================== */
 function initCustomCursor() {
+  // Custom cursor animation deactivated to keep native browser pointer
   const cursor = document.querySelector(".aa-cursor");
-  const ring = document.querySelector(".aa-cursor__ring");
-  const dot = document.querySelector(".aa-cursor__dot");
-  if (!cursor || !ring) return;
-
-  let mouseX = window.innerWidth / 2;
-  let mouseY = window.innerHeight / 2;
-  let ringX = mouseX;
-  let ringY = mouseY;
-
-  window.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-    if (dot) {
-      dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    }
-  }, { passive: true });
-
-  function renderCursor() {
-    // Spring Damping
-    ringX += (mouseX - ringX) * 0.22;
-    ringY += (mouseY - ringY) * 0.22;
-    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
-
-    const pen = cursor.querySelector(".aa-cursor__pen");
-    if (pen) {
-      pen.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) rotate(-15deg)`;
-    }
-
-    requestAnimationFrame(renderCursor);
-  }
-  renderCursor();
-
-  // Hover expansion on interactive elements
-  const interactives = document.querySelectorAll("a, button, input, select, textarea, .portfolio-item, .media-keep-pace-wrap, .before-after-container");
-  interactives.forEach(el => {
-    el.addEventListener("mouseenter", () => cursor.classList.add("hovering"));
-    el.addEventListener("mouseleave", () => cursor.classList.remove("hovering"));
-  });
+  if (cursor) cursor.remove();
 }
 
 /* ==========================================================================
