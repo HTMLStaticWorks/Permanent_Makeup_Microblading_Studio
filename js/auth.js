@@ -135,3 +135,67 @@ function checkAuthGuard() {
   }
   return client;
 }
+
+// Password Visibility Toggle Helper
+function setupPasswordToggles() {
+  document.querySelectorAll(".password-toggle-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const input = btn.closest(".password-input-wrap")?.querySelector("input");
+      if (!input) return;
+      const isPassword = input.type === "password";
+      input.type = isPassword ? "text" : "password";
+      
+      const eyeOpen = btn.querySelector(".eye-open");
+      const eyeClosed = btn.querySelector(".eye-closed");
+      if (eyeOpen && eyeClosed) {
+        eyeOpen.style.display = isPassword ? "none" : "block";
+        eyeClosed.style.display = isPassword ? "block" : "none";
+      }
+      btn.setAttribute("aria-label", isPassword ? "Hide password" : "Show password");
+    });
+  });
+}
+
+// Switch between Sign In and Sign Up tabs
+function switchAuthMode(mode) {
+  const isSignUp = mode === 'signup';
+  const loginForm = document.getElementById("portalLoginForm");
+  const signupForm = document.getElementById("portalSignupForm");
+  const tabLogin = document.getElementById("tabLoginBtn");
+  const tabSignup = document.getElementById("tabSignupBtn");
+  const switchPrompt = document.getElementById("authSwitchPrompt");
+
+  if (loginForm && signupForm) {
+    if (isSignUp) {
+      loginForm.style.display = "none";
+      signupForm.style.display = "block";
+      if (tabLogin) tabLogin.classList.remove("active");
+      if (tabSignup) tabSignup.classList.add("active");
+      if (switchPrompt) {
+        switchPrompt.innerHTML = 'Already have a client vault? <a href="#" class="auth-switch-link" onclick="switchAuthMode(\'login\'); return false;">Sign In</a>';
+      }
+    } else {
+      loginForm.style.display = "block";
+      signupForm.style.display = "none";
+      if (tabLogin) tabLogin.classList.add("active");
+      if (tabSignup) tabSignup.classList.remove("active");
+      if (switchPrompt) {
+        switchPrompt.innerHTML = 'Don’t have private access? <a href="#" class="auth-switch-link" onclick="switchAuthMode(\'signup\'); return false;">Create Client Account</a>';
+      }
+    }
+  }
+}
+
+// Social Login Demo handler
+function handleSocialAuth(provider) {
+  const clientData = Object.assign({}, DEMO_CLIENT, {
+    name: provider === 'google' ? 'Alia (via Google)' : provider === 'apple' ? 'Alia (via Apple)' : 'Alia (via WhatsApp)'
+  });
+  setAuthenticatedClient(clientData);
+  window.location.href = "dashboard.html";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupPasswordToggles();
+});
+
