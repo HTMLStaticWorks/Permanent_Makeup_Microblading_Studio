@@ -414,7 +414,7 @@ function renderInvoicesModule(client) {
 }
 
 window.viewInvoiceReceipt = function(no, treatment, amount, date) {
-  alert(`=== ANANYA PIGMENT ATELIER · ANDHRA OFFICIAL TAX INVOICE ===\nInvoice: ${no}\nDate: ${date}\nTreatment: ${treatment}\nTotal Paid: ${amount} (Incl. 18% GST)\nPayment Status: PAID & VERIFIED\n\nA PDF receipt has been sent to your registered email.`);
+  alert(`=== ANANYA PIGMENT ATELIER OFFICIAL TAX INVOICE ===\nInvoice: ${no}\nDate: ${date}\nTreatment: ${treatment}\nTotal Paid: ${amount} (Incl. 18% GST)\nPayment Status: PAID & VERIFIED\n\nA PDF receipt has been sent to your registered email.`);
 };
 
 /* Notifications Module */
@@ -462,7 +462,7 @@ function initBookingForms(client) {
         artistAvatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80",
         status: "Confirmed",
         confirmed: true,
-        location: "Andhra Atelier"
+        location: "Private Atelier Suite"
       };
 
       setAuthenticatedClient(client);

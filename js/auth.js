@@ -28,7 +28,7 @@ const DEMO_CLIENT = {
     artistAvatar: "image/make%20(20).jpg",
     status: "Action Required: Please Confirm",
     confirmed: false,
-    location: "Studio 2, Andhra Atelier"
+    location: "Studio 2, Private Atelier"
   },
   healingProgress: {
     procedureName: "Lip Blush & Velvet Neutralization",

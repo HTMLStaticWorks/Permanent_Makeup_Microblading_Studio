@@ -51,23 +51,13 @@ function initCustomCursor() {
 }
 
 /* ==========================================================================
-   03. MAGNETIC BUTTONS
+   03. BUTTON HOVER STABILITY
    ========================================================================== */
 function initMagneticButtons() {
-  const magnetics = document.querySelectorAll("[data-magnetic], .btn-luxury");
-
-  magnetics.forEach(btn => {
-    btn.addEventListener("mousemove", (e) => {
-      const rect = btn.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-
-      btn.style.transform = `translate3d(${x * 0.24}px, ${y * 0.24}px, 0)`;
-    });
-
-    btn.addEventListener("mouseleave", () => {
-      btn.style.transform = `translate3d(0, 0, 0)`;
-    });
+  // Buttons remain steady and stable in place on hover per design specification
+  const buttons = document.querySelectorAll("[data-magnetic], .btn-luxury");
+  buttons.forEach(btn => {
+    btn.style.transform = "none";
   });
 }
 
