@@ -189,7 +189,7 @@ function switchAuthMode(mode) {
 // Social Login Demo handler
 function handleSocialAuth(provider) {
   const clientData = Object.assign({}, DEMO_CLIENT, {
-    name: provider === 'google' ? 'Alia (via Google)' : provider === 'apple' ? 'Alia (via Apple)' : 'Alia (via WhatsApp)'
+    name: provider === 'google' ? 'Alia (via Google)' : 'Alia (via Apple)'
   });
   setAuthenticatedClient(clientData);
   window.location.href = "dashboard.html";

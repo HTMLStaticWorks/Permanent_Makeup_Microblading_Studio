@@ -421,9 +421,27 @@ img, video {
 }
 
 .brand-logo-arch {
-  width: 32px;
-  height: 26px;
+  width: 28px;
+  height: 30px;
   flex-shrink: 0;
+}
+
+.brand-logo-img {
+  height: 38px;
+  width: auto;
+  max-width: 65px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.06);
+}
+
+[data-theme="dark"] .brand-logo-img {
+  filter: brightness(1.22) contrast(1.08) drop-shadow(0 0 8px rgba(201, 178, 138, 0.35));
 }
 
 .brand-title {
@@ -1104,7 +1122,7 @@ body.menu-open {
   z-index: 1;
 }
 
-/* Consistent Page Hero Headers Across All Inner Pages */
+/* Consistent Page Hero Headers Across All Inner Pages (Standardized 380px) */
 .page-hero-header {
   position: relative;
   background-size: cover !important;
@@ -1112,11 +1130,13 @@ body.menu-open {
   background-repeat: no-repeat !important;
   isolation: isolate;
   overflow: hidden;
+  height: 380px;
   min-height: 380px;
+  max-height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(80px, 10vh, 120px) 0 clamp(60px, 8vh, 90px) !important;
+  padding: 0 var(--container-padding-x) !important;
   border-bottom: 1px solid var(--color-border);
   box-sizing: border-box;
 }
@@ -1138,6 +1158,24 @@ body.menu-open {
 .page-hero-header > .container-atelier {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-hero-header h1 {
+  font-size: clamp(2rem, 3.4vw, 2.6rem);
+  line-height: 1.22;
+  margin: 0 auto 12px;
+  max-width: 780px;
+}
+
+.page-hero-header .section-subtitle {
+  font-size: clamp(0.92rem, 1.1vw, 1.02rem);
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .hero-grid {
@@ -2275,6 +2313,11 @@ body.menu-open {
   text-decoration: none;
 }
 
+.footer-brand .brand-logo-img {
+  height: 46px;
+  max-width: 76px;
+}
+
 .footer-brand .brand-logo .brand-name {
   color: #211D1B;
   font-family: var(--font-heading);
@@ -2806,7 +2849,7 @@ body.menu-open {
 
 .social-auth-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   margin-top: 18px;
 }
@@ -3165,11 +3208,11 @@ body.menu-open {
     --section-padding-y: 60px;
   }
 
-  /* Centered Brand Header in Mobile/Tablet Portrait */
+  /* Left-Aligned Brand Header in Mobile/Tablet Portrait */
   .navbar-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     width: 100%;
   }
@@ -3177,9 +3220,15 @@ body.menu-open {
   .brand-logo {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
+    justify-content: flex-start;
+    margin: 0;
+    text-align: left;
+    max-width: calc(100% - 60px);
+  }
+
+  .brand-logo-img {
+    height: 32px;
+    max-width: 52px;
   }
 
   .brand-title {
@@ -3189,9 +3238,42 @@ body.menu-open {
     text-align: left;
   }
 
+  [dir="rtl"] .brand-logo {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
   [dir="rtl"] .brand-title {
     align-items: flex-end;
     text-align: right;
+  }
+
+  .page-hero-header {
+    height: auto;
+    min-height: 330px;
+    max-height: none;
+    padding: 56px var(--container-padding-x) 46px !important;
+  }
+
+  /* About Page Specific Left Alignment Assurance */
+  .about-story-col,
+  .about-artist-col,
+  .about-hygiene-col {
+    text-align: left !important;
+  }
+
+  .about-story-col .badge-lab,
+  .about-artist-col .badge-lab,
+  .about-hygiene-col .badge-lab {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  .about-story-col h2,
+  .about-artist-col h2,
+  .about-artist-col h3,
+  .about-hygiene-col h2 {
+    text-align: left !important;
   }
 
   .brand-tagline {
